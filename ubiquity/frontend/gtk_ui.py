@@ -896,6 +896,8 @@ class Wizard(BaseFrontend):
             style = box.get_style_context()
             style.add_class('ubiquity-menubar')
 
+        self.live_installer.set_icon_name("ubiquity")
+
         # TODO lazy load
         from gi.repository import Vte
         self.vte = Vte.Terminal()
